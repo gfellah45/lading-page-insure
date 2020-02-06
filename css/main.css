@@ -336,9 +336,16 @@ body{
 
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 414px){
     
     /* header and navigation mobile view */
+    html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
     
     .heading{
         width: 100vw;
@@ -353,9 +360,12 @@ body{
     .bars-wrapper{
         transition: all ease .5s;
     }
+    .navigation{
+        justify-content: space-between;
+    }
     .menu-bars{
         display: block;
-        margin-left: 50vw;
+        margin-right: 15px;
     }
     .scrolled .bar{
         background: #fff;
@@ -570,6 +580,7 @@ body{
         text-align: center;
         margin: .5rem 0 6rem 0;
         cursor: pointer;
+        padding-bottom: 3rem;
     }
     .how-we-work .work a input{
         background: inherit;
@@ -589,6 +600,7 @@ body{
         background-position: top top;
         background-size: contain;
         background-repeat: no-repeat;
+        
     }
     .footer-section .socials{
         display: flex;
