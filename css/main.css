@@ -25,21 +25,18 @@ body{
     font-family: var(--header-font);
     background: hsl(0, 0%, 98%);
     position: fixed;
-    width: 100%;
-    
-    
+    width: 100%; 
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 1;
 }
 .scrolled{
     background:  hsl(256, 26%, 20%);
     color:#fff;
 }
 
-.heading{
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1;
-    }
 .nav-brand{
     text-decoration: none;
     color: hsl(256, 26%, 20%);
@@ -342,16 +339,8 @@ body{
 @media screen and (max-width: 480px){
     
     /* header and navigation mobile view */
-    body{
-        margin: 0;
-        overflow: hidden;
-        width: 100%;
-    }
+    
     .heading{
-        top: 0;
-        display: flex;
-        justify-content: space-between;
-        z-index: 1;
         width: 100vw;
         }
     .container{
