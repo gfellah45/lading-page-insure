@@ -335,7 +335,7 @@ body{
 /* end of footer */
 
 
-
+/* mobile navigation with a 414px width */
 @media screen and (max-width: 414px){
     
     /* header and navigation mobile view */
@@ -370,8 +370,11 @@ body{
     .scrolled .bar{
         background: #fff;
     }
-    .change .bar1{
+    .bar{
         transition: ease-in-out all .5s;
+    }
+    .change .bar1{
+        
         transform: rotateZ(-405deg) translate(-8px, 6px);
     }
     .change .bar3{
@@ -466,6 +469,8 @@ body{
     .intro-showcase a{
         display: block;
         text-align: center;
+        padding-bottom: 5rem;
+        margin-bottom: 3rem;
     }
     .intro{
         /* display: flex;
@@ -546,9 +551,10 @@ body{
     }
     /* show case mobile end */
 
+
+
     /* how we work */
 
-  
     .how-we-work{
         color: #fff;
         height: 50vh;
@@ -573,6 +579,7 @@ body{
         padding: 4rem 0;
         letter-spacing: 1px;
         width: 80%;
+        
 
     }
     .how-we-work .work a{
@@ -594,6 +601,11 @@ body{
     .how-we-work .work a input:hover{
         opacity: .6;
     }
+
+    /* how we work end */
+
+
+    /* fotter section start */
     .footer-section{
         background: hsl(0, 0%, 98%);
         background-image: url('../images/bg-pattern-footer-mobile.svg');
@@ -642,7 +654,7 @@ body{
     }
     .footer-section .footer-listings .our-company ul li{
         list-style-type: none;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
     }
     .footer-section .footer-listings .our-company ul li a{
         text-decoration: none;
@@ -654,9 +666,21 @@ body{
     .footer-section .footer-listings .our-company ul li a:hover{
         opacity: .7;
     }
-
-
-
-
     
+}
+@media screen and (max-width: 1300px){
+    .heading{
+        flex-wrap: nowrap;
+    }
+    .nav-bar{
+        margin-right: 3vw;
+    }
+   
+}
+@media screen and (max-width: 1000px){
+   
+    .nav-bar{
+        margin-right: 0;
+    }
+   
 }
